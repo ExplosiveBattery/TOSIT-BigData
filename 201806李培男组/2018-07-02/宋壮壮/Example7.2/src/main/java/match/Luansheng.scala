@@ -1,0 +1,5 @@
+
+
+trait Luansheng {
+println("luansheng")
+}
