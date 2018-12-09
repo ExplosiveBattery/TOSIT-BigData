@@ -1,0 +1,22 @@
+plugins {
+    id 'scala'
+}
+
+group 'cn.hellovega'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.spark:spark-core_2.11:2.2.0'
+    implementation 'org.apache.spark:spark-streaming_2.11:2.2.0'
+    implementation group: 'org.apache.spark', name: 'spark-streaming-kafka-0-10_2.11', version: '2.2.0'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+    implementation 'org.apache.hbase:hbase-client:2.0.1'
+    implementation 'org.apache.hbase:hbase-common:2.0.1'
+    implementation group: 'joda-time', name: 'joda-time', version: '2.10'
+    implementation 'com.fasterxml.jackson.module:jackson-module-scala_2.11:2.9.2' //处理hadoop与xxx的jackson冲突
+
+}
