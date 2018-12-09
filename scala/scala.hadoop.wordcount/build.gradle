@@ -1,0 +1,21 @@
+plugins {
+    id 'scala'
+}
+
+group 'cn.hellovega'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.apache.hadoop:hadoop-common:2.7.2'
+    implementation 'org.apache.hadoop:hadoop-hdfs:2.7.2'
+    implementation 'org.apache.hadoop:hadoop-mapreduce-client-core:2.7.2'
+    implementation 'org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.7.2'
+    implementation 'org.apache.hadoop:hadoop-mapreduce-client-common:2.7.2'
+}
