@@ -1,0 +1,17 @@
+plugins {
+    id 'scala'
+}
+
+group 'cn.hellovega'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.spark:spark-core_2.11:2.3.1'
+    implementation 'org.apache.spark:spark-streaming_2.11:2.3.1'
+}
